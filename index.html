@@ -1,1 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            /* margin-left: 5%; */
+            background-color: rgba(255, 255, 255, 0.33);
+            /* background-color: aqua; */
+            font-size: large;
+            position: fixed;
+            top: 0%;
+        }
+
+        header h3 {
+            width: 10%;
+            padding: 1%;
+            margin-left: 5%;
+        }
+
+        header ul {
+            display: flex;
+            justify-content: space-evenly;
+            width: 50%;
+            list-style: none;
+            padding: 1%;
+        }
+
+        header button {
+            width: 10%;
+            height: 35px;
+            margin: 0.5%;
+            border-radius: 10px;
+            padding: 0.45%;
+            background-color: blue;
+            color: aliceblue;
+            border: none;
+            margin-right: 5%;
+        }
+
+        .home {
+            background: linear-gradient(to top right, rgb(46, 46, 255), rgb(255, 35, 71));
+            width: 100%;
+            margin-top: 55px;
+            text-align: center;
+            font-size: 200%;
+            padding: 9% 0;
+            color: rgb(255, 255, 255);
+        }
+
+        .form {
+            background-color: rgba(227, 229, 230, 0.514);
+            padding: 2% 1%;
+            border-radius: 10px;
+            width: 55%;
+            margin-left: 22.5%;
+
+        }
+
+        .home form {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .home input,
+        select {
+            width: 20%;
+            padding: 1% 1%;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .home form button {
+            padding: 1% 0%;
+            width: 20%;
+            height: 35px;
+            border-radius: 10px;
+            background-color: blue;
+            color: rgb(255, 255, 255);
+            border: none;
+        }
+
+        .homelink {
+            width: 60%;
+            margin-left: 20%;
+            display: flex;
+            justify-content: space-evenly;
+            font-size: medium;
+        }
+
+        .homelink a {
+            color: aliceblue;
+            text-decoration: none;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.219);
+            border-radius: 15px;
+            padding: 0.5% 1%;
+        }
+
+        .homepartition {
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            font-size: x-large;
+            padding: 2% 5%;
+            background-color: whitesmoke;
+        }
+
+        .homepartition b {
+            font-size: 200%;
+            color: rgb(124, 52, 188);
+        }
+
+        .OPsection {
+            text-align: center;
+            padding: 5% 0%;
+        }
+
+        .Opportunities {
+            width: 95%;
+            display: flex;
+            justify-content: space-between;
+            margin: 1% 0% 1% 2.5%;
+            text-align: left;
+            font-size: 130%;
+        }
+
+        .Opportunitiesbox {
+            width: 48%;
+            border: 2px solid rgb(146, 146, 146);
+            background-color: whitesmoke;
+            border-radius: 25px;
+            display: flex;
+            padding: 1% 0% 1% 1%;
+        }
+
+        .Opportunitiesbox img {
+            width: 75px;
+            height: 75px;
+            margin-right: 2%;
+            margin-left: 2%;
+        }
+
+        .Opportunitiesbox:hover {
+            transform: scale(1.02);
+            color: rgb(248, 255, 246);
+            background: linear-gradient(to top right, rgb(82, 82, 231), rgb(233, 100, 122));
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+        }
+
+        .OPboxdetail {
+            padding-left: 2%;
+            font-size: 100%;
+            width: 80%;
+        }
+
+        .OPboxdetail b {
+            padding: 1%;
+            background-color: aquamarine;
+            color: green;
+            border-radius: 10px;
+        }
+
+        .OPboxdetail a {
+            padding: 1%;
+            width: 25%;
+            color: blue;
+            background-color: rgba(255, 255, 255, 0.815);
+            border-radius: 10px;
+        }
+
+        .OPsection button {
+            width: 10%;
+            height: 35px;
+            border-radius: 10px;
+            padding: 0.45%;
+            background-color: blue;
+            color: aliceblue;
+            border: none;
+            font-size: 120%;
+        }
+
+
+        .Categorysection {
+            text-align: center;
+            padding: 5% 0%;
+            background-color: whitesmoke;
+        }
+
+        .category {
+            padding: 0% 5% 2% 5%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .categorybox {
+            width: 20%;
+            text-align: left;
+            border-radius: 10px;
+            padding: 2% 0% 2% 2%;
+            font-size: 150%;
+            border: 2px solid rgb(146, 146, 146);
+            background-color: whitesmoke;
+        }
+
+        .categorybox:hover {
+            transform: scale(1.02);
+            color: rgb(248, 255, 246);
+            background: linear-gradient(to top right, rgb(82, 82, 231), rgb(233, 100, 122));
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        }
+
+        .categorybox img {
+            border-radius: 10px;
+            margin-bottom: 2%;
+        }
+
+        .Categorysection button {
+            width: 10%;
+            height: 35px;
+            border-radius: 10px;
+            padding: 0.45%;
+            background-color: blue;
+            color: aliceblue;
+            font-size: 120%;
+            border: none;
+
+        }
+
+        .Employesection {
+            text-align: center;
+            padding: 5% 0%;
+        }
+
+        .employee {
+            display: flex;
+            justify-content: space-evenly;
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        .employeebox {
+            width: 30%;
+            padding: 2% 0%;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 120%;
+            border: 2px solid rgb(146, 146, 146);
+            background-color: whitesmoke;
+        }
+
+        .employeebox:hover {
+            transform: scale(1.02);
+            color: rgb(248, 255, 246);
+            background: linear-gradient(to top right, rgb(82, 82, 231), rgb(233, 100, 122));
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        }
+
+        .employeebox img {
+            border-radius: 10px;
+        }
+
+        /*         
+        .employeebox loc{
+            margin-top: 500px;
+        } */
+
+        .Employesection a {
+            border-radius: 8px;
+            background-color: aquamarine;
+            color: green;
+            padding: 0% 1%;
+        }
+
+        .Employesection button {
+            width: 10%;
+            height: 35px;
+            border-radius: 10px;
+            padding: 0.45%;
+            background-color: blue;
+            color: aliceblue;
+            border: none;
+            font-size: 120%;
+        }
+
+
+        .worksection {
+            text-align: center;
+            padding: 6% 0%;
+            background-color: whitesmoke;
+        }
+
+        .selector {
+            width: 30%;
+            margin-left: 35%;
+            display: flex;
+            border: 1px solid black;
+            border-radius: 20px;
+        }
+
+        .selector p {
+            border: 1px solid rgb(183, 183, 183);
+            border-radius: 20px;
+            width: 50%;
+            padding: 1.5% 0%;
+        }
+
+        .selector p:hover {
+            background-color: rgb(57, 117, 229);
+            border-radius: 20px;
+            width: 50%;
+            padding: 1% 0%;
+        }
+
+
+        .work {
+            padding: 0% 5% 2% 5%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .workbox {
+            width: 30%;
+            text-align: left;
+            border-radius: 10px;
+            padding: 2% 0% 2% 2%;
+            font-size: 150%;
+            border: 2px solid rgb(146, 146, 146);
+            background-color: whitesmoke;
+        }
+
+        .workbox:hover {
+            transform: scale(1.02);
+            color: rgb(248, 255, 246);
+            background: linear-gradient(to top right, rgb(82, 82, 231), rgb(233, 100, 122));
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        }
+
+        .workbox img {
+            border-radius: 10px;
+            margin-bottom: 2%;
+        }
+
+        .Storiessection {
+            text-align: center;
+            padding: 5% 0%;
+            background-color: white;
+        }
+
+        .Stories {
+            padding: 0% 5% 2% 5%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .Storiesbox {
+            width: 28%;
+            text-align: left;
+            border-radius: 10px;
+            padding: 2%;
+            font-size: 150%;
+            border: 2px solid rgb(146, 146, 146);
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h3>JobDhundho</h3>
+
+        <ul>
+            <li>home</li>
+            <li>Companies</li>
+            <li>About</li>
+            <li>Pricing</li>
+            <li>Blog</li>
+            <li>Contact</li>
+        </ul>
+
+        <button>Find Job</button>
+    </header>
+    <div class="home">
+        <h1>FIND THE DREAM JOB </h1><br>
+        <p>Search thousands of opportunities from top companies worldwide.<br> Your next career move starts here.
+        </p><br>
+        <div class="form">
+            <form action="">
+                <input type="text" placeholder="Job,title">
+                <input type="text" placeholder="Raipur,Chhattisgarh">
+                <select name="" id="">
+                    <option value=""> All Catagory</option>
+                    <option value=""> Engineering</option>
+                    <option value=""> Engineering</option>
+                    <option value=""> Engineering</option>
+                    <option value=""> Engineering</option>
+                    <option value=""> Engineering</option>
+                    <option value=""> Engineering</option>
+                </select>
+                <button> Search</button>
+            </form>
+            <hr style="margin: 2% 0%;">
+            <p style="color: rgb(0, 0, 0);">Advance Search</p>
+        </div>
+        <br>
+        <div class="homelink">
+            <p>Popular :</p>
+            <a href="google.com">React Developer</a>
+            <a href="google.com">Product Manager</a>
+            <a href="google.com">Data Scientist</a>
+            <a href="google.com">UX Designer</a>
+            <a href="google.com">DevOps Engineer</a>
+            <a href="google.com">Marketing Lead</a>
+        </div>
+    </div>
+
+    <!-- extra details for partition -->
+    <div class="homepartition">
+        <p><b>2,500+</b><br>
+            Active Jobs</p>
+        <p><b>500+</b><br>
+            Companies</p>
+        <p><b>50K+</b><br>
+            Successful Hires</p>
+        <p><b>4.8</b><br>
+            User Rating</p>
+    </div>
+
+    <!-- latest Opportunities -->
+    <div class="OPsection">
+        <h1 style=" font-size: 300%;"> Latest Opportunities</h1><br>
+        <p style=" font-size: 150%;">Hand-picked positions from top companies looking for exceptional
+            talent.</p><br><br>
+        <div class="Opportunities">
+            <div class="Opportunitiesbox">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop" alt="">
+                <div class="OPboxdetail">
+                    <p><strong style="font-size: 120%;">Senior React Developer</strong>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;&emsp;&emsp;&emsp; <b>
+                            Full-time</b><br>
+                        TechFlow Inc.<br> San Francisco, CA &emsp; $140K - $180K &emsp; 2 days ago<br><br>
+                        React &ensp; TypeScript &ensp; Node.js
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a>Apply Now</a>
+                    </p>
+                </div>
+            </div>
+            <div class="Opportunitiesbox">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop" alt="">
+                <div class="OPboxdetail">
+                    <p><strong style="font-size: 120%;">Senior React Developer</strong>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;&emsp;&emsp;&emsp; <b>
+                            Full-time</b><br>
+                        TechFlow Inc.<br> San Francisco, CA &emsp; $140K - $180K &emsp; 2 days ago<br><br>
+                        React &ensp; TypeScript &ensp; Node.js
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a>Apply Now</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="Opportunities">
+            <div class="Opportunitiesbox">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop" alt="">
+                <div class="OPboxdetail">
+                    <p><strong style="font-size: 120%;">Senior React Developer</strong>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;&emsp;&emsp;&emsp; <b>
+                            Full-time</b><br>
+                        TechFlow Inc.<br> San Francisco, CA &emsp; $140K - $180K &emsp; 2 days ago<br><br>
+                        React &ensp; TypeScript &ensp; Node.js
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a>Apply Now</a>
+                    </p>
+                </div>
+            </div>
+            <div class="Opportunitiesbox">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop" alt="">
+                <div class="OPboxdetail">
+                    <p><strong style="font-size: 120%;">Senior React Developer</strong>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;&emsp;&emsp;&emsp; <b>
+                            Full-time</b><br>
+                        TechFlow Inc.<br> San Francisco, CA &emsp; $140K - $180K &emsp; 2 days ago<br><br>
+                        React &ensp; TypeScript &ensp; Node.js
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a>Apply Now</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="Opportunities">
+            <div class="Opportunitiesbox">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop" alt="">
+                <div class="OPboxdetail">
+                    <p><strong style="font-size: 120%;">Senior React Developer</strong>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;&emsp;&emsp;&emsp; <b>
+                            Full-time</b><br>
+                        TechFlow Inc.<br> San Francisco, CA &emsp; $140K - $180K &emsp; 2 days ago<br><br>
+                        React &ensp; TypeScript &ensp; Node.js
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a>Apply Now</a>
+                    </p>
+                </div>
+            </div>
+            <div class="Opportunitiesbox">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop" alt="">
+                <div class="OPboxdetail">
+                    <p><strong style="font-size: 120%;">Senior React Developer</strong>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;&emsp;&emsp;&emsp; <b>
+                            Full-time</b><br>
+                        TechFlow Inc.<br> San Francisco, CA &emsp; $140K - $180K &emsp; 2 days ago<br><br>
+                        React &ensp; TypeScript &ensp; Node.js
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a>Apply Now</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <button>View All</button>
+    </div>
+
+    <div class="Categorysection">
+        <h1 style=" font-size: 300%;">Explore by Category</h1><br>
+        <p style=" font-size: 150%;">
+            Find opportunities across the most in-demand fields and industries.</p><br><br>
+        <div class="category">
+            <div class="categorybox">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop" alt="">
+                <p> Technology <br>
+                    840 open positions</p>
+            </div>
+            <div class="categorybox">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop" alt="">
+                <p> Technology <br>
+                    840 open positions</p>
+            </div>
+            <div class="categorybox">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop" alt="">
+                <p> Technology <br>
+                    840 open positions</p>
+            </div>
+            <div class="categorybox">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop" alt="">
+                <p> Technology <br>
+                    840 open positions</p>
+            </div>
+
+        </div>
+        <div class="category">
+            <div class="categorybox">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop" alt="">
+                <p> Technology <br>
+                    840 open positions</p>
+            </div>
+            <div class="categorybox">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop" alt="">
+                <p> Technology <br>
+                    840 open positions</p>
+            </div>
+            <div class="categorybox">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop" alt="">
+                <p> Technology <br>
+                    840 open positions</p>
+            </div>
+            <div class="categorybox">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop" alt="">
+                <p> Technology <br>
+                    840 open positions</p>
+            </div>
+        </div>
+        <br><br>
+        <button>View All</button>
+    </div>
+
+    <!-- Employers -->
+    <div class="Employesection">
+        <a>Top Employers</a>
+        <h1 style=" font-size: 300%;">Companies Hiring Now</h1><br>
+        <p style=" font-size: 150%;">
+            Join industry-leading organizations that are actively looking for talent like you.</p><br><br>
+        <div class="employee">
+            <div class="employeebox">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop"
+                    alt=" not available">
+                <h2>TechFlow Inc. </h2>
+                <p>Software Development</p>
+                <loc>Location Raipur</loc><br><br>
+                <a>5 position left</a>
+            </div>
+            <div class="employeebox">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop"
+                    alt=" not available">
+                <h2>TechFlow Inc. </h2>
+                <p>Software Development</p>
+                <loc>Location Raipur</loc><br><br>
+                <a>8 position left</a>
+            </div>
+            <div class="employeebox">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop"
+                    alt=" not available">
+                <h2>TechFlow Inc. </h2>
+                <p>Software Development</p>
+                <loc>Location Raipur</loc><br><br>
+                <a>10 position left</a>
+            </div>
+        </div>
+        <br>
+        <div class="employee">
+            <div class="employeebox">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop"
+                    alt=" not available">
+                <h2>TechFlow Inc. </h2>
+                <p>Software Development</p>
+                <loc>Location Raipur</loc><br><br>
+                <a>15 position left</a>
+            </div>
+            <div class="employeebox">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop"
+                    alt=" not available">
+                <h2>TechFlow Inc. </h2>
+                <p>Software Development</p>
+                <loc>Location Raipur</loc><br><br>
+                <a>2 position left</a>
+            </div>
+            <div class="employeebox">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop"
+                    alt=" not available">
+                <h2>TechFlow Inc. </h2>
+                <p>Software Development</p>
+                <loc>Location Raipur</loc><br><br>
+                <a>11 position left</a>
+            </div>
+        </div>
+        <br><br>
+        <button>View All</button>
+    </div>
+
+    <!-- work -->
+    <div class="worksection">
+
+        <a>How It Works</a><br>
+        <h1 style=" font-size: 300%;">Your Path to Success</h1><br><br>
+        <p style=" font-size: 150%;">Whether you are looking for your next role or your next hire, HireHub makes the
+            process simple and effective.</p><br><br><br>
+        <div class="selector">
+            <p>For Job Seekers</p>
+            <p>For Employers</p>
+        </div>
+        <br><br>
+        <div class="work">
+            <div class="workbox">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop" alt="">
+                <p><strong>Create Your Profile </strong> <br><br> Build a standout profile showcasing your skills,
+                    experience, and career goals. Upload your resume and let employers find you.</p>
+            </div>
+
+            <div class="workbox">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop" alt="">
+                <p><strong>Discover Opportunities </strong> <br><br> Search and filter thousands of jobs by role,
+                    location,
+                    salary, and more. Get personalized recommendations based on your profile.</p>
+            </div>
+
+            <div class="workbox">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop" alt="">
+                <p><strong> Apply & Get Hired</strong> <br><br> Apply with one click, track your applications, and
+                    connect
+                    directly with hiring managers. Land your dream job faster.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- work -->
+    <div class="Storiessection">
+
+
+        <a>Testimonials</a>
+        <h1 style=" font-size: 300%;">Success Stories</h1><br>
+        <p style=" font-size: 150%;">Hear from job seekers and employers who found their perfect match on HireHub.</p>
+        <br><br>
+        <br>
+        <div class="Stories">
+
+            <div class="Storiesbox">
+                <div class="upperquote">
+                    <p>“As a hiring manager, HireHub has transformed our recruitment process. We reduced our
+                        time-to-hire by
+                        60% and the quality of candidates is exceptional.”
+                </div>
+                <hr style="margin: 2% 0%;">
+                <strong>Marcus Rodriguez</strong><br> VP of Engineering, TechFlow
+                </p>
+            </div>
+            <div class="Storiesbox">
+                <div class="upperquote">
+                    <p>“The platform made my career transition from finance to tech seamless. The personalized
+                        recommendations were spot-on and helped me land a role I love.”
+                </div>
+                <hr style="margin: 2% 0%;">
+                <strong>Aisha Patel</strong><br> Product Manager
+                </p>
+            </div>
+            <div class="Storiesbox">
+                <div class="upperquote">
+                    <p>“We have posted over 50 positions on HireHub and filled every single one with outstanding talent.
+                        It is our go-to platform for all hiring needs.”
+                </div>
+                <hr style="margin: 2% 0%;">
+                <strong>James Wright</strong><br>Head of HR, CloudPeak
+                </p>
+            </div>
+        </div>
+        <footer>
+
+        </footer>
+</body>
+
+</html>
