@@ -355,7 +355,7 @@
 
         .Storiessection {
             text-align: center;
-            padding: 5% 0%;
+            padding: 5% 0% 10% 0%;
             background-color: white;
         }
 
@@ -373,6 +373,56 @@
             font-size: 150%;
             border: 2px solid rgb(146, 146, 146);
             background-color: whitesmoke;
+        }
+
+        footer {
+            background-color: rgb(17, 0, 81);
+            color: white;
+            padding: 5%;
+            font-size: 120%;
+            display: flex;
+        }
+
+        .fleft {
+            width: 30%;
+            text-align: left;
+            list-style: none;
+        }
+
+        .fleft a {
+            border-radius: 10px;
+            background-color: rgba(240, 248, 255, 0.462);
+            padding: 1% 2%;
+            margin: 1% 2%;
+        }
+
+        .fright {
+            width: 70%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .frsub {
+            list-style: none;
+            text-align: left;
+        }
+
+        .frsub li {
+            margin: 10% 0% 0% 0%;
+        }
+
+        .mainfooter {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            background-color: rgb(17, 0, 81);
+            padding: 2% 0 2% 8%;
+            font-size: 120%;
+        }
+        .mainfooter div{
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
         }
     </style>
 </head>
@@ -681,7 +731,6 @@
     <!-- work -->
     <div class="Storiessection">
 
-
         <a>Testimonials</a>
         <h1 style=" font-size: 300%;">Success Stories</h1><br>
         <p style=" font-size: 150%;">Hear from job seekers and employers who found their perfect match on HireHub.</p>
@@ -718,9 +767,66 @@
                 </p>
             </div>
         </div>
-        <footer>
+    </div>
+    <footer>
+        <div class="fleft">
+            <p><strong>JobDhundho</strong><br><br>
+                Connect with your next career opportunity. HireHub is the modern job board platform for top talent
+                and leading employers.
+            </p><br><br>
+            <li>(555) 492-3847</li><br>
+            <li>hello@hirehub.com</li><br>
+            <li>200 Tech Boulevard, San Francisco, CA 94105</li><br>
+            <a> link</a>
+            <a> git</a>
+            <a> inst </a>
 
-        </footer>
+        </div>
+
+        <div class="fright">
+            <div class="frsub">
+                <li> <strong>For Job Seekers</strong></li>
+                <li>Browse Jobs</li>
+                <li>Companies</li>
+                <li>Career Tips</li>
+                <li>Salary Guide</li>
+            </div>
+
+            <div class="frsub">
+                <li> <strong>For Employers</strong></li>
+                <li>Post a Job</li>
+                <li>Pricing</li>
+                <li>For Employers</li>
+                <li>Hiring Resources</li>
+            </div>
+
+            <div class="frsub">
+                <li><strong>Resources</strong></li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+            </div>
+
+            <div class="frsub">
+                <li><strong>Company</strong></li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+            </div>
+        </div>
+
+    </footer>
+
+    <div class="mainfooter">
+        <p>© 2026 HireHub. All rights reserved.</p>
+        <div>
+            <p>Privacy Policy</p>
+            <p>Terms of Service</p>
+            <p>Style Guide</p>
+        </div>
+    </div>
 </body>
 
 </html>
