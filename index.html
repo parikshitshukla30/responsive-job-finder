@@ -130,6 +130,7 @@
         .OPsection {
             text-align: center;
             padding: 10% 2%;
+            background-color: whitesmoke;
         }
 
         .Opportunities {
@@ -164,6 +165,8 @@
         .Opportunitiesbox img {
             width: 15%;
             margin: 2% 0 2% 2%;
+
+            border-radius: 10px;
         }
 
 
@@ -196,8 +199,14 @@
 
         .OPsection button {
             width: 10%;
-            font-size: 100%;
             height: 35px;
+            border-radius: 10px;
+            padding: 0.45%;
+            background-color: blue;
+            color: aliceblue;
+            font-size: 120%;
+            border: none;
+
         }
 
         .Categorysection {
@@ -249,6 +258,7 @@
         .Employesection {
             text-align: center;
             padding: 5% 0%;
+            background-color: whitesmoke;
         }
 
         .employee {
@@ -284,7 +294,7 @@
         /*         
         .employeebox loc{
             margin-top: 500px;
-        } */
+            } */
 
         .Employesection a {
             border-radius: 8px;
@@ -365,7 +375,7 @@
         .Storiessection {
             text-align: center;
             padding: 5% 0% 10% 0%;
-            background-color: white;
+            background-color: whitesmoke;
         }
 
         .Stories {
@@ -391,6 +401,8 @@
             font-size: 120%;
             display: flex;
         }
+
+        ;
 
         .fleft {
             width: 30%;
@@ -442,7 +454,7 @@
         @media (max-width:800px) {
             header {
                 flex-direction: column;
-                width: 100%;
+                width: 95%;
                 font-size: 150%;
                 text-align: center;
                 position: absolute;
@@ -556,7 +568,7 @@
                 margin: 1% 0%;
                 padding-left: 2%;
                 font-size: 110%;
-                width: 85%;
+                width: 100%;
                 font-size: 90%;
             }
 
@@ -566,11 +578,12 @@
             }
 
             .apply {
-                width: 100%;
+                width: 94%;
                 display: flex;
                 justify-content: space-between;
                 flex-direction: row;
                 padding: 1%;
+                margin: 0% 2%;
             }
 
             .OPsection .apply button {
@@ -609,13 +622,6 @@
                 width: 20%;
                 font-size: 100%;
             }
-
-
-
-
-
-
-
 
             .Employesection {
                 text-align: center;
@@ -690,6 +696,10 @@
 
             .fright {
                 flex-direction: column;
+            }
+
+            .frsub {
+                margin-bottom: 5%;
             }
 
             .frsub li {
@@ -799,11 +809,26 @@
                 </div>
             </div>
             <div class="Opportunitiesbox">
-                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop" alt="">
+                <img src="https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=60&h=60&fit=crop" alt="">
 
                 <div class="OPboxdetail">
-                    <p><strong style="font-size: 120%;">Senior React Developer</strong><br><br>
-                        TechFlow Inc.<br> San Francisco, CA &emsp; $140K - $180K &emsp; 2 days ago<br><br>
+                    <p><strong style="font-size: 120%;">Lead UX Designer</strong><br><br>
+                        DesignCraft Studio <br> Remote &emsp; $120K - $160K &emsp; 2 days ago<br><br>
+                        React &ensp; TypeScript &ensp; Node.js
+                    </p>
+                </div>
+
+                <div class="apply">
+                    <p><b style="background-color: pink">Remote</b></p>
+                    <button>Apply</button>
+                </div>
+            </div>
+            <div class="Opportunitiesbox">
+                <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=60&h=60&fit=crop" alt="">
+
+                <div class="OPboxdetail">
+                    <p><strong style="font-size: 120%;">Data Scientist</strong><br><br>
+                        DataVault Analytics <br>New York, NY &emsp; $130K - $170K &emsp; 2 days ago<br><br>
                         React &ensp; TypeScript &ensp; Node.js
                     </p>
                 </div>
@@ -814,26 +839,11 @@
                 </div>
             </div>
             <div class="Opportunitiesbox">
-                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop" alt="">
+                <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=60&h=60&fit=crop" alt="">
 
                 <div class="OPboxdetail">
-                    <p><strong style="font-size: 120%;">Senior React Developer</strong><br><br>
-                        TechFlow Inc.<br> San Francisco, CA &emsp; $140K - $180K &emsp; 2 days ago<br><br>
-                        React &ensp; TypeScript &ensp; Node.js
-                    </p>
-                </div>
-
-                <div class="apply">
-                    <p><b>Full Time</b></p>
-                    <button>Apply</button>
-                </div>
-            </div>
-            <div class="Opportunitiesbox">
-                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop" alt="">
-
-                <div class="OPboxdetail">
-                    <p><strong style="font-size: 120%;">Senior React Developer</strong><br><br>
-                        TechFlow Inc.<br> San Francisco, CA &emsp; $140K - $180K &emsp; 2 days ago<br><br>
+                    <p><strong style="font-size: 120%;">DevOps Engineer</strong><br><br>
+                        CloudPeak Systems<br> Austin, TX &emsp; $125K - $165K &emsp; 2 days ago<br><br>
                         React &ensp; TypeScript &ensp; Node.js
                     </p>
                 </div>
@@ -862,40 +872,40 @@
             </div>
             <div class="categorybox">
                 <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop" alt="">
-                <p> Technology <br>
-                    840 open positions</p>
+                <p> Design <br>
+                    320 open positions</p>
             </div>
             <div class="categorybox">
                 <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop" alt="">
-                <p> Technology <br>
-                    840 open positions</p>
+                <p> Marketing <br>
+                    275 open positions</p>
             </div>
             <div class="categorybox">
                 <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop" alt="">
-                <p> Technology <br>
-                    840 open positions</p>
+                <p> Finance <br>
+                    190 open positions</p>
             </div>
         </div>
         <div class="category">
             <div class="categorybox">
                 <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop" alt="">
-                <p> Technology <br>
-                    840 open positions</p>
+                <p> Healthcare <br>
+                    210 open positions</p>
             </div>
             <div class="categorybox">
                 <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop" alt="">
-                <p> Technology <br>
-                    840 open positions</p>
+                <p> Education <br>
+                    165 open positions</p>
             </div>
             <div class="categorybox">
                 <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop" alt="">
-                <p> Technology <br>
-                    840 open positions</p>
+                <p> Sales <br>
+                    230 open positions</p>
             </div>
             <div class="categorybox">
                 <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop" alt="">
-                <p> Technology <br>
-                    840 open positions</p>
+                <p> Engineering <br>
+                    510 open positions</p>
             </div>
         </div>
         <br><br>
@@ -910,7 +920,7 @@
             Join industry-leading organizations that are actively looking for talent like you.</p><br><br>
         <div class="employee">
             <div class="employeebox">
-                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop"
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=100&h=100&fit=crop"
                     alt=" not available">
                 <h2>TechFlow Inc. </h2>
                 <p>Software Development</p>
@@ -918,45 +928,50 @@
                 <a>5 position left</a>
             </div>
             <div class="employeebox">
-                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop"
+                <img src="https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=100&h=100&fit=crop"
                     alt=" not available">
-                <h2>TechFlow Inc. </h2>
-                <p>Software Development</p>
-                <loc>Location Raipur</loc><br><br>
-                <a>8 position left</a>
+                <h2>DesignCraft Studio</h2>
+                <p>Creative Agency</p>
+
+                <loc>New York, NY</loc><br><br>
+                <a>12 open positions</a>
             </div>
             <div class="employeebox">
-                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop"
+                <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=100&h=100&fit=crop"
                     alt=" not available">
-                <h2>TechFlow Inc. </h2>
-                <p>Software Development</p>
-                <loc>Location Raipur</loc><br><br>
-                <a>10 position left</a>
+                <h2>DataVault Analytics</h2>
+                <p>Data & Analytics</p>
+
+                <loc>Seattle, WA</loc><br><br>
+                <a>18 open positions</a>
             </div>
 
             <div class="employeebox">
-                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop"
+                <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=100&h=100&fit=crop"
                     alt=" not available">
-                <h2>TechFlow Inc. </h2>
-                <p>Software Development</p>
-                <loc>Location Raipur</loc><br><br>
-                <a>15 position left</a>
+                <h2>CloudPeak Systems</h2>
+                <p>Cloud Infrastructure</p>
+
+                <loc>Austin, TX</loc><br><br>
+                <a>31 open positions</a>
             </div>
             <div class="employeebox">
-                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop"
+                <img src="https://images.unsplash.com/photo-1614680376593-902f74cf0d41?w=100&h=100&fit=crop"
                     alt=" not available">
-                <h2>TechFlow Inc. </h2>
-                <p>Software Development</p>
-                <loc>Location Raipur</loc><br><br>
-                <a>2 position left</a>
+                <h2>GrowthLab Marketing</h2>
+                <p>Digital Marketing</p>
+
+                <loc>Remote</loc><br><br>
+                <a>9 open positions</a>
             </div>
             <div class="employeebox">
-                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=60&h=60&fit=crop"
+                <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=100&h=100&fit=crop"
                     alt=" not available">
-                <h2>TechFlow Inc. </h2>
-                <p>Software Development</p>
-                <loc>Location Raipur</loc><br><br>
-                <a>11 position left</a>
+                <h2>FinEdge Capital</h2>
+                <p>Financial Services</p>
+
+                <loc>Chicago, IL</loc><br><br>
+                <a>15 open positions</a>
             </div>
         </div>
         <br><br>
@@ -1048,9 +1063,9 @@
             <li>(555) 492-3847</li><br>
             <li>hello@hirehub.com</li><br>
             <li>200 Tech Boulevard, San Francisco, CA 94105</li><br>
-            <a> link</a>
-            <a> git</a>
-            <a> inst </a>
+            <a> facebook</a>
+            <a> Linkedin</a>
+            <a> instagram </a>
 
         </div>
 
@@ -1091,7 +1106,7 @@
     </footer>
 
     <div class="mainfooter">
-        <p>© 2026 HireHub. All rights reserved.</p>
+        <p>© 2026 JobDhundho. All rights reserved.</p>
         <div>
             <p>Privacy Policy</p>
             <p>Terms of Service</p>
